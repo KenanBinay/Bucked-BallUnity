@@ -15,9 +15,10 @@ public class Sayac1 : MonoBehaviour
 
     public static float kayıt1;
     float deger;
+    public static float sayacAc1;
     void Update()
     {  
-        if (Bucked1.x != 1)
+        if (Bucked2and3.x1 != 1)
         {           
             deger+=Time.deltaTime;
             say1.text = deger.ToString("0");
@@ -26,14 +27,20 @@ public class Sayac1 : MonoBehaviour
         }
        else
         {
-            sayaccek1 = say1.text;
-            say1.gameObject.SetActive(false);
-          
-            if (kayıt1 < deger)
+            sayacAc1=1;
+            if (sayacAc1 == 1)
             {
-                kayıt1 = deger;
-            }
-        }
-    }
+                sayaccek1 = say1.text;
+                say1.gameObject.SetActive(false);
 
+                if (kayıt1 < deger)
+                {
+                    kayıt1 = deger;
+                }
+
+            }
+         
+        }
+    
+     }
 }

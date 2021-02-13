@@ -11,6 +11,8 @@ public class Bucked2and3 : MonoBehaviour
     public GameObject kapatmaButonu;
     void Start()
     {
+        if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }
+        if (kapatmaButonu.gameObject == true) { kapatmaButonu.gameObject.SetActive(false); }
         LevelEnd1.gameObject.SetActive(false);
         kapatmaButonu.gameObject.SetActive(false);
         timelvl1.GetComponent<TextMeshProUGUI>();

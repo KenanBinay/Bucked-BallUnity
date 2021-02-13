@@ -22,7 +22,7 @@ public class Bucked1 : MonoBehaviour
     {
         if(collision.gameObject.tag=="Player")
         {
-           // SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("Menu");
             x = 1; //episode 2 için değeri 1 yaptım
             StartPointKey.say = 0;
             ElKontrol = 1;

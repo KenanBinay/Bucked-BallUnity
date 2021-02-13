@@ -24,11 +24,13 @@ public class episode2Start : MonoBehaviour
         if (Bucked1.x == 1) // eğer 1.bölümün kovasına değer girdise 2.bölümü aç
         {
             openlevel.enabled = true;
+            Sayac1.sayacAc1 = 0;
             //Bucked1.x = 0;        
         }     
     }
     public void StartGame()
     {
+        Sayac1.sayacAc1 = 0;
         SceneManager.LoadScene("episode2");  
         StartPointKey.say = 0;
     }
