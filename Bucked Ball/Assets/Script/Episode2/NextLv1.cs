@@ -8,6 +8,6 @@ public class NextLv1 : MonoBehaviour
 {
     public void Next()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }

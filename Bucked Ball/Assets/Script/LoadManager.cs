@@ -26,15 +26,20 @@ public class LoadManager : MonoBehaviour
         }
     }
 
+    public GameObject Gotime2;
+
     private void Start()
     {     
         Load();
         if (data.bölüm2 == 1)
         {
             Bucked1.x = LoadManager.instance.data.bölüm2;
+           
         }
         if (data.bölüm3 == 1)
         {
+            Gotime2.SetActive(true);
+            episode2Start.time1Lvl = LoadManager.instance.data.time2;
             Bucked2and3.x1 = LoadManager.instance.data.bölüm3;
         }
         if (data.bölüm4 == 1)
@@ -75,14 +80,16 @@ public class LoadManager : MonoBehaviour
         if (Bucked1.x == 1)
         {
             data.bölüm2 = 1;
+          
             Save();
             Debug.Log("Bölüm2 Kaydedildi");
         }
         if (Bucked2and3.x1 == 1)
         {
             data.bölüm3 = 1;
+            data.time2 = Sayac1.sayaccek1;
             Save();
-            Debug.Log("Bölüm3 Kaydedildi");
+            Debug.Log("Bölüm3 Kaydedildi Bölüm2 Süre kaydedildi");
         }
         if (Bucked3to4.x4 == 1)
         {
@@ -161,19 +168,19 @@ public class LoadManager : MonoBehaviour
 public class Data
 {
     public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11;
-
+    public string  time2, time3, time4, time5, time6, time7, time8, time9, time10, time11;
     public Data()
     {
-        bölüm2 = 0;
-        bölüm3 = 0;
-        bölüm4 = 0;
-        bölüm5 = 0;
-        bölüm6 = 0;
-        bölüm7 = 0;
-        bölüm8 = 0;
-        bölüm9 = 0;
-        bölüm10 = 0;
-        bölüm11 = 0;
+        bölüm2 = 0; time2 = Sayac1.sayaccek1;
+        bölüm3 = 0; //time2=
+        bölüm4 = 0; //time3=
+        bölüm5 = 0; //time4=
+        bölüm6 = 0; //time5=
+        bölüm7 = 0; //time6=
+        bölüm8 = 0; //time7= 
+        bölüm9 = 0; //time8= 
+        bölüm10 = 0; //time9= 
+        bölüm11 = 0; //time10= 
     }
 
 }

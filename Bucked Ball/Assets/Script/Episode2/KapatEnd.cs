@@ -12,7 +12,7 @@ public class KapatEnd : MonoBehaviour
     {
         end1.gameObject.SetActive(false);        
         Time.timeScale = 1f;
-        Bucked1.x = 0;
+        Bucked2and3.x1 = 0;
         degerVer1();
     }
     private void degerVer1() { kont = 1; }
