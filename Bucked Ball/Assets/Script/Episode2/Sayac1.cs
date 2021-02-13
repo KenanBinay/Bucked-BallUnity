@@ -14,7 +14,7 @@ public class Sayac1 : MonoBehaviour
     }
 
     public static float kayıt1;
-    float deger;
+    public static float deger;
     public static float sayacAc1;
     void Update()
     {  
@@ -39,6 +39,7 @@ public class Sayac1 : MonoBehaviour
                 }
 
             }
+            else { return; }
          
         }
     
