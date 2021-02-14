@@ -35,7 +35,7 @@ public class Bucked2and3 : MonoBehaviour
         {
             //SceneManager.LoadScene("Menu");
             x1 = 1;//bölüm 3 ün açılması için gereken değer
-            Bucked1.x = 1;
+            Bucked2and3.x1 = 1;
             StartPointKey.say = 0;
             if (KapatEnd.kont == 1)
             {

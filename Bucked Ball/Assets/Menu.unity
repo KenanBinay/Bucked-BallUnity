@@ -771,7 +771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2375ca3bf80a15b46866ab90b5daeb63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text2: {fileID: 0}
+  text2: {fileID: 325949280}
 --- !u!1 &424058720
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,7 +2752,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openlevel: {fileID: 1272171495}
-  text: {fileID: 0}
 --- !u!95 &1272171495
 Animator:
   serializedVersion: 3
@@ -3203,17 +3202,16 @@ MonoBehaviour:
     "b\xF6l\xFCm9": 0
     "b\xF6l\xFCm10": 0
     "b\xF6l\xFCm11": 0
-    time2: 
-    time3: 
-    time4: 
-    time5: 
-    time6: 
-    time7: 
-    time8: 
-    time9: 
-    time10: 
-    time11: 
-  Gotime2: {fileID: 325949278}
+    time2: 0
+    time3: 0
+    time4: 0
+    time5: 0
+    time6: 0
+    time7: 0
+    time8: 0
+    time9: 0
+    time10: 0
+    time11: 0
 --- !u!4 &1797352585
 Transform:
   m_ObjectHideFlags: 0

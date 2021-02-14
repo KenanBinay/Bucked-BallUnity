@@ -6,15 +6,11 @@ using TMPro;
 public class episode2Start : MonoBehaviour
 {
     public  Animator openlevel;
-    public TextMeshProUGUI text;
     public static string time1Lvl;
     void Start()
     {
         openlevel.enabled = false;
-        Bucked1.x = LoadManager.instance.data.bölüm2;
-        time1Lvl = LoadManager.instance.data.time2;
-
-        text.SetText("" + time1Lvl);
+        Bucked1.x = LoadManager.instance.data.bölüm2;    
     }
 
     // Update is called once per frame
@@ -24,15 +20,18 @@ public class episode2Start : MonoBehaviour
         if (Bucked1.x == 1) // eğer 1.bölümün kovasına değer girdise 2.bölümü aç
         {
             openlevel.enabled = true;
-            Sayac1.sayacAc1 = 0;
+          
             //Bucked1.x = 0;        
         }     
     }
+
     public void StartGame()
     {
-        Sayac1.sayacAc1 = 0;
-        SceneManager.LoadScene("episode2");  
+        Debug.Log("bölüm 2 başladı");
+        Bucked2and3.x1 = 0;
+        Sayac1.deger = Bucked1.x;
         StartPointKey.say = 0;
+        SceneManager.LoadScene("episode2");        
     }
    
 }
