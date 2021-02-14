@@ -28,8 +28,7 @@ public class episode2Start : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("bölüm 2 başladı");
-        Bucked2and3.x1 = 0;
-        Sayac1.deger = Bucked1.x;
+       // Bucked2and3.x1 = 0;
         StartPointKey.say = 0;
         SceneManager.LoadScene("episode2");        
     }

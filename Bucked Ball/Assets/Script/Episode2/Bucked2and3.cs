@@ -17,25 +17,15 @@ public class Bucked2and3 : MonoBehaviour
         kapatmaButonu.gameObject.SetActive(false);
         timelvl1.GetComponent<TextMeshProUGUI>();
     }
-
-    void Update()
-    {
-        if (Bucked2and3.x1 == 1) { level1(); }
-        else { return; }
-    }
-    public void level1()
-    {
-        StartCoroutine(GetEndLevel());
-    }
+    
     public static float x1 = 0;
-   
+    public static float CloseOpen = 0;
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag=="Player")
         {
-            //SceneManager.LoadScene("Menu");
-            x1 = 1;//bölüm 3 ün açılması için gereken değer
-            Bucked2and3.x1 = 1;
+            CloseOpen = 1;
+            x1 = 1; //bölüm 3 ün açılması için gereken değer
             StartPointKey.say = 0;
             if (KapatEnd.kont == 1)
             {
@@ -45,17 +35,31 @@ public class Bucked2and3 : MonoBehaviour
             }
         }
     }
+
+    void Update()
+    {
+        if (x1 == 1) { level1(); }
+        else { return; }
+    }
+
+    public void level1()
+    {
+        StartCoroutine(GetEndLevel());
+    }
+
     public IEnumerator GetEndLevel()
     {
         yield return new WaitForSeconds(0.50f);
 
-        if (Bucked2and3.x1 == 1)
+        if (CloseOpen == 1)
         {
             Debug.Log("Bölüm bitti");
             timelvl1.SetText("" + Sayac1.sayaccek1);
             LevelEnd1.gameObject.SetActive(true);
             kapatmaButonu.gameObject.SetActive(true);
+            CloseOpen = 0;
+            Time.timeScale = 0f;
         }
-        else { kapatmaButonu.gameObject.SetActive(false); }
+        else { }
     }
 }

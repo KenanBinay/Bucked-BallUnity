@@ -20,7 +20,7 @@ public class Sayac1 : MonoBehaviour
     public static float sayacAc1;
     void Update()
     {  
-        if (Bucked2and3.x1 != 1)
+        if (Bucked2and3.CloseOpen != 1)
         {
            
             deger+=Time.deltaTime;
