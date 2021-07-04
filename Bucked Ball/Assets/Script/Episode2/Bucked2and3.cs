@@ -20,6 +20,11 @@ public class Bucked2and3 : MonoBehaviour
     
     public static float x1 = 0;
     public static float CloseOpen = 0;
+
+    public GameObject Gud;
+    public GameObject Medium;
+    public GameObject Bad;
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag=="Player")
@@ -31,10 +36,14 @@ public class Bucked2and3 : MonoBehaviour
             {
                 LevelEnd1.gameObject.SetActive(false);
                 kapatmaButonu.gameObject.SetActive(false);
+                Gud.SetActive(false);
+                Medium.SetActive(false);
+                Bad.SetActive(false);
                 KapatEnd.kont = 0;
             }
         }
     }
+   
 
     void Update()
     {
@@ -54,12 +63,14 @@ public class Bucked2and3 : MonoBehaviour
         if (CloseOpen == 1)
         {
             Debug.Log("Bölüm bitti");
-            timelvl1.SetText("" + Sayac1.sayaccek1);
             LevelEnd1.gameObject.SetActive(true);
             kapatmaButonu.gameObject.SetActive(true);
+            if (Sayac1.deger >= 0 && Sayac1.deger <= 17) { Gud.SetActive(true); }
+            if (Sayac1.deger >= 17 && Sayac1.deger <= 25) { Medium.SetActive(true); }
+            if (Sayac1.deger >= 25) { Bad.SetActive(true); }
             CloseOpen = 0;
             Time.timeScale = 0f;
         }
-        else { }
+        else { CloseOpen = 0; }
     }
 }

@@ -19,6 +19,7 @@ public class episode2Start : MonoBehaviour
         
         if (Bucked1.x == 1) // eğer 1.bölümün kovasına değer girdise 2.bölümü aç
         {
+            Sayac1.deger = 0;
             openlevel.enabled = true;
           
             //Bucked1.x = 0;        

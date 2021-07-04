@@ -38,7 +38,6 @@ public class LoadManager : MonoBehaviour
         }
         if (data.bölüm3 == 1)
         {
-            Sayac1.deger = LoadManager.instance.data.time2;
             Bucked2and3.x1 = LoadManager.instance.data.bölüm3;
         }
         if (data.bölüm4 == 1)
@@ -79,14 +78,12 @@ public class LoadManager : MonoBehaviour
         if (Bucked1.x == 1)
         {
             data.bölüm2 = 1;
-          
             Save();
             Debug.Log("Bölüm2 Kaydedildi");
         }
         if (Bucked2and3.x1 == 1)
         {
             data.bölüm3 = 1;
-            data.time2 = Sayac1.deger;
             Save();
             Debug.Log("Bölüm3 Kaydedildi Bölüm2 Süre kaydedildi");
         }
@@ -167,10 +164,10 @@ public class LoadManager : MonoBehaviour
 public class Data
 {
     public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11;
-    public float  time2, time3, time4, time5, time6, time7, time8, time9, time10, time11;
+   
     public Data()
     {
-        bölüm2 = 0; time2 = Sayac1.deger;
+        bölüm2 = 0; 
         bölüm3 = 0; //time2=
         bölüm4 = 0; //time3=
         bölüm5 = 0; //time4=
