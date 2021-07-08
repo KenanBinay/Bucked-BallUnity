@@ -10,7 +10,7 @@ public class Episode1Start : MonoBehaviour
 
     void Start()
     {
-       
+        Sayac.deger = 0;
     }
 
     // Update is called once per frame

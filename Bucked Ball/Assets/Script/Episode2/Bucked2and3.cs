@@ -6,7 +6,7 @@ using TMPro;
 public class Bucked2and3 : MonoBehaviour
 {
     public GameObject LevelEnd1;
-    public TextMeshProUGUI timelvl1;
+
 
     public GameObject kapatmaButonu;
     void Start()
@@ -15,7 +15,7 @@ public class Bucked2and3 : MonoBehaviour
         if (kapatmaButonu.gameObject == true) { kapatmaButonu.gameObject.SetActive(false); }
         LevelEnd1.gameObject.SetActive(false);
         kapatmaButonu.gameObject.SetActive(false);
-        timelvl1.GetComponent<TextMeshProUGUI>();
+   
     }
     
     public static float x1 = 0;
@@ -65,9 +65,9 @@ public class Bucked2and3 : MonoBehaviour
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
             kapatmaButonu.gameObject.SetActive(true);
-            if (Sayac1.deger >= 0 && Sayac1.deger <= 17) { Gud.SetActive(true); }
-            if (Sayac1.deger >= 17 && Sayac1.deger <= 25) { Medium.SetActive(true); }
-            if (Sayac1.deger >= 25) { Bad.SetActive(true); }
+            if (Sayac.deger >= 0 && Sayac.deger <= 17) { Gud.SetActive(true); }
+            if (Sayac.deger >= 17 && Sayac.deger <= 25) { Medium.SetActive(true); }
+            if (Sayac.deger >= 25) { Bad.SetActive(true); }
             CloseOpen = 0;
             Time.timeScale = 0f;
         }

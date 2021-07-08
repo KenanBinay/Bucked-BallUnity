@@ -11345,6 +11345,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6060440522436798456, guid: de27a7bbf04bfa640b01dad9ecfdee02,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7385853074721927303, guid: de27a7bbf04bfa640b01dad9ecfdee02,
         type: 3}
       propertyPath: m_RootOrder
@@ -11566,6 +11571,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 892220564}
     m_Modifications:
+    - target: {fileID: 3074953404434094644, guid: 82f9ebc5da8dc414294a7ae5d6c29638,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8933601879738747953, guid: 82f9ebc5da8dc414294a7ae5d6c29638,
         type: 3}
       propertyPath: m_Name
@@ -11830,6 +11840,11 @@ PrefabInstance:
     - target: {fileID: 7319358394137996619, guid: b6091b67607c98d4096fa31d4863ebbf,
         type: 3}
       propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319358394137996619, guid: b6091b67607c98d4096fa31d4863ebbf,
+        type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -13,6 +13,7 @@ public class res1 : MonoBehaviour
     // Update is called once per frame
    public void Restart()
     {
+        Sayac.deger = 0;
         Time.timeScale = 1f;
         Bucked1.x = 0;
         StartPointKey.say = 0;

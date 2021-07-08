@@ -10,7 +10,7 @@ public class res2 : MonoBehaviour
     // Update is called once per frame
     public void Restart()
     {
-        Sayac1.deger = 0;
+        Sayac.deger = 0;
         SceneManager.LoadScene("episode2");
         StartPointKey.say = 0;
     }
