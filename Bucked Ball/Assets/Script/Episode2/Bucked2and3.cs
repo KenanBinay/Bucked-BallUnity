@@ -3,19 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+
 public class Bucked2and3 : MonoBehaviour
 {
     public GameObject LevelEnd1;
 
-
-    public GameObject kapatmaButonu;
     void Start()
     {
         if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }
-        if (kapatmaButonu.gameObject == true) { kapatmaButonu.gameObject.SetActive(false); }
         LevelEnd1.gameObject.SetActive(false);
-        kapatmaButonu.gameObject.SetActive(false);
-   
     }
     
     public static float x1 = 0;
@@ -32,19 +28,14 @@ public class Bucked2and3 : MonoBehaviour
             CloseOpen = 1;
             x1 = 1; //bölüm 3 ün açılması için gereken değer
             StartPointKey.say = 0;
-            if (KapatEnd.kont == 1)
-            {
-                LevelEnd1.gameObject.SetActive(false);
-                kapatmaButonu.gameObject.SetActive(false);
-                Gud.SetActive(false);
-                Medium.SetActive(false);
-                Bad.SetActive(false);
-                KapatEnd.kont = 0;
-            }
+
+            LevelEnd1.gameObject.SetActive(false);
+            Gud.SetActive(false);
+            Medium.SetActive(false);
+            Bad.SetActive(false);
         }
     }
    
-
     void Update()
     {
         if (x1 == 1) { level1(); }
@@ -64,13 +55,13 @@ public class Bucked2and3 : MonoBehaviour
         {
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
-            kapatmaButonu.gameObject.SetActive(true);
             if (Sayac.deger >= 0 && Sayac.deger <= 17) { Gud.SetActive(true); }
             if (Sayac.deger >= 17 && Sayac.deger <= 25) { Medium.SetActive(true); }
             if (Sayac.deger >= 25) { Bad.SetActive(true); }
             CloseOpen = 0;
             Time.timeScale = 0f;
         }
+
         else { CloseOpen = 0; }
     }
 }

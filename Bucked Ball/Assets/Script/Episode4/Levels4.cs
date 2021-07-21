@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Levels3 : MonoBehaviour
+public class Levels4 : MonoBehaviour
 {
     public void GetLevels1()
     {
         Time.timeScale = 1f;
-        Bucked3to4.x4 = 1;
+        Bucket4To5.x5 = 1;
         SceneManager.LoadScene(1);
     }
 }

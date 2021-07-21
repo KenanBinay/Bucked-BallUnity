@@ -3448,7 +3448,6 @@ GameObject:
   - component: {fileID: 1179788741}
   - component: {fileID: 1179788740}
   - component: {fileID: 1179788739}
-  - component: {fileID: 1179788738}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -3475,20 +3474,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1, y: -425.64996}
   m_SizeDelta: {x: 107.66, y: 23.89}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1179788738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179788736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffc975e6bbe7254f892e24574a97856, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  end1: {fileID: 1773659659}
-  close: {fileID: 1773659659}
 --- !u!114 &1179788739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3533,7 +3518,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1179788738}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: KapatEnd, Assembly-CSharp
         m_MethodName: Kapat
         m_Mode: 1

@@ -11065,7 +11065,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 336.00003, y: -90.31968}
+  m_AnchoredPosition: {x: 336, y: -90.3197}
   m_SizeDelta: {x: 631.50275, y: 168.19873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1594205245
@@ -11942,7 +11942,6 @@ GameObject:
   - component: {fileID: 2028877098}
   - component: {fileID: 2028877097}
   - component: {fileID: 2028877096}
-  - component: {fileID: 2028877095}
   m_Layer: 5
   m_Name: Close
   m_TagString: Untagged
@@ -11969,20 +11968,6 @@ RectTransform:
   m_AnchoredPosition: {x: -4, y: -417.96997}
   m_SizeDelta: {x: 107.66, y: 23.89}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2028877095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2028877093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dffc975e6bbe7254f892e24574a97856, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  end1: {fileID: 892220563}
-  close: {fileID: 892220563}
 --- !u!114 &2028877096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12027,7 +12012,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2028877095}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: KapatEnd, Assembly-CSharp
         m_MethodName: Kapat
         m_Mode: 1

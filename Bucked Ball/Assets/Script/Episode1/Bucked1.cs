@@ -38,15 +38,12 @@ public class Bucked1 : MonoBehaviour
             x = 1; //episode 2 için değeri 1 yaptım
             StartPointKey.say = 0;
             ElKontrol = 1;
-            if (KapatEnd.kont == 1)
-            {
-                LevelEnd1.gameObject.SetActive(false);
-                kapatmaButonu.gameObject.SetActive(false);
-                Gud.SetActive(false);
-                Medium.SetActive(false);
-                Bad.SetActive(false);
-                KapatEnd.kont = 0;
-            }
+           
+            LevelEnd1.gameObject.SetActive(false);
+            kapatmaButonu.gameObject.SetActive(false);
+            Gud.SetActive(false);
+            Medium.SetActive(false);
+            Bad.SetActive(false); 
         }
     }
 

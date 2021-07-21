@@ -12,5 +12,5 @@ public class Levels1 : MonoBehaviour
         Bucked2and3.x1 = 1;
         SceneManager.LoadScene(1);
     }
-  
+
 }
