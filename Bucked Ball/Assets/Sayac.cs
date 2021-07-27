@@ -8,6 +8,7 @@ public class Sayac : MonoBehaviour
 
     void start()
     {
+        deger = 0;
         Debug.Log("BaþladýSüre");
         //  StartCoroutine(Sayac1Basla());
 
