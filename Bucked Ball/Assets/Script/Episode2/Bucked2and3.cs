@@ -10,6 +10,7 @@ public class Bucked2and3 : MonoBehaviour
 
     void Start()
     {
+        Sayac.deger = 0;
         if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }
         LevelEnd1.gameObject.SetActive(false);
     }

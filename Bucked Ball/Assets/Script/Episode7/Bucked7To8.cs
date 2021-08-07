@@ -9,6 +9,7 @@ public class Bucked7To8 : MonoBehaviour
 
     void Start()
     {
+        Sayac.deger = 0;
         if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }
         LevelEnd1.gameObject.SetActive(false);
     }
@@ -24,10 +25,10 @@ public class Bucked7To8 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene("Menu");
+          //  SceneManager.LoadScene("Menu");
             StartPointKey.say = 0;
             x8 = 1;
-
+            CloseOpen = 1;
             LevelEnd1.gameObject.SetActive(false);
             Gud.SetActive(false);
             Medium.SetActive(false);

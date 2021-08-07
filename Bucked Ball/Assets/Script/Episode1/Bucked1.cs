@@ -13,15 +13,14 @@ public class Bucked1 : MonoBehaviour
 
     public GameObject LevelEnd1;
 
-    public GameObject kapatmaButonu;
+    
 
     private void Start()
     {
+        Sayac.deger = 0;
         Bucked1.x = 0;
-        if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }
-        if (kapatmaButonu.gameObject == true) { kapatmaButonu.gameObject.SetActive(false); }
+        if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }  
         LevelEnd1.gameObject.SetActive(false);
-        kapatmaButonu.gameObject.SetActive(false);
 
     }
 
@@ -33,14 +32,12 @@ public class Bucked1 : MonoBehaviour
     {
         if(collision.gameObject.tag=="Player")
         {
-            CloseOpen = 1;
           //  SceneManager.LoadScene("Menu");
             x = 1; //episode 2 için değeri 1 yaptım
             StartPointKey.say = 0;
             ElKontrol = 1;
-           
+            CloseOpen = 1;
             LevelEnd1.gameObject.SetActive(false);
-            kapatmaButonu.gameObject.SetActive(false);
             Gud.SetActive(false);
             Medium.SetActive(false);
             Bad.SetActive(false); 
@@ -66,7 +63,6 @@ public class Bucked1 : MonoBehaviour
         {
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
-            kapatmaButonu.gameObject.SetActive(true);
             if (Sayac.deger >= 0 && Sayac.deger <= 17) { Gud.SetActive(true); }
             if (Sayac.deger >= 17 && Sayac.deger <= 25) { Medium.SetActive(true); }
             if (Sayac.deger >= 25) { Bad.SetActive(true); }
