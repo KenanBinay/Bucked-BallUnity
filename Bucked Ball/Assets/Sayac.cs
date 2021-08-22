@@ -17,6 +17,7 @@ public class Sayac : MonoBehaviour
     void Update()
     {
         deger += Time.deltaTime;
-        Debug.Log("Süre = " + deger.ToString("0.#"));
+       // Debug.Log("Süre = " + deger.ToString("0.#"));
+        Debug.Log("Süre = " + deger.ToString("#"));
     }
 }
