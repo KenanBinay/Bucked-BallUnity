@@ -8,6 +8,6 @@ public class NextLvl11 : MonoBehaviour
     public void Next()
     {
         Time.timeScale = 1f;
-       // SceneManager.LoadScene(13);
+        SceneManager.LoadScene(13);
     }
 }

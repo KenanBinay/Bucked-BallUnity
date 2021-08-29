@@ -6,6 +6,9 @@ public class FanMovement : MonoBehaviour
 {
     public GameObject fan;
     public Rigidbody2D top;
+    
+    [Range(0.0f, 10.0f)]
+    public float hýz;
     void Start()
     {
         
@@ -13,7 +16,10 @@ public class FanMovement : MonoBehaviour
 
     void Update()
     {
-        fan.transform.Rotate(0,0,-2);
+        if (Bucked11To12.x12 != 1)
+        {
+            fan.transform.Rotate(0, 0, -2);
+        }
         
     }
     /*
@@ -26,7 +32,7 @@ public class FanMovement : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("EtkileþimFan");
-        top.AddForce(Vector2.right);       
+        top.AddForce(Vector2.right*hýz);       
     }
    
 }
