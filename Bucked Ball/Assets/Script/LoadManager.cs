@@ -26,8 +26,6 @@ public class LoadManager : MonoBehaviour
         }
     }
 
-   
-
     private void Start()
     {     
         Load();
@@ -77,7 +75,7 @@ public class LoadManager : MonoBehaviour
         }
         if (data.bölüm13 == 1)
         {
-            Bucked12To13.x13 = LoadManager.instance.data.bölüm12;
+            Bucked12To13.x13 = LoadManager.instance.data.bölüm13;
         }
     }
     private void Update()
