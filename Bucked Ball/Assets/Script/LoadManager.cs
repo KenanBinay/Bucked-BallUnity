@@ -33,8 +33,7 @@ public class LoadManager : MonoBehaviour
         Load();
         if (data.bölüm2 == 1)
         {
-            Bucked1.x = LoadManager.instance.data.bölüm2;
-           
+            Bucked1.x = LoadManager.instance.data.bölüm2;    
         }
         if (data.bölüm3 == 1)
         {
@@ -42,35 +41,43 @@ public class LoadManager : MonoBehaviour
         }
         if (data.bölüm4 == 1)
         {
-            Bucked3to4.x4 = LoadManager.instance.data.bölüm3;
+            Bucked3to4.x4 = LoadManager.instance.data.bölüm4;
         }
         if (data.bölüm5 == 1)
         {
-            Bucket4To5.x5 = LoadManager.instance.data.bölüm3;
+            Bucket4To5.x5 = LoadManager.instance.data.bölüm5;
         }
         if (data.bölüm6 == 1)
         {
-            Bucked5To6.x6 = LoadManager.instance.data.bölüm3;
+            Bucked5To6.x6 = LoadManager.instance.data.bölüm6;
         }
         if (data.bölüm7 == 1)
         {
-            Bucked6To7.x7 = LoadManager.instance.data.bölüm3;
+            Bucked6To7.x7 = LoadManager.instance.data.bölüm7;
         }
         if (data.bölüm8 == 1)
         {
-            Bucked7To8.x8 = LoadManager.instance.data.bölüm3;
+            Bucked7To8.x8 = LoadManager.instance.data.bölüm8;
         }
         if (data.bölüm9 == 1)
         {
-            Bucket8To9.x9 = LoadManager.instance.data.bölüm3;
+            Bucket8To9.x9 = LoadManager.instance.data.bölüm9;
         }
         if (data.bölüm10 == 1)
         {
-            Bucket9To10.x10 = LoadManager.instance.data.bölüm3;
+            Bucket9To10.x10 = LoadManager.instance.data.bölüm10;
         }
         if (data.bölüm11 == 1)
         {
-            Bucked10To11.x11 = LoadManager.instance.data.bölüm3;
+            Bucked10To11.x11 = LoadManager.instance.data.bölüm11;
+        }
+        if (data.bölüm12 == 1)
+        {
+            Bucked11To12.x12 = LoadManager.instance.data.bölüm12;
+        }
+        if (data.bölüm13 == 1)
+        {
+            Bucked12To13.x13 = LoadManager.instance.data.bölüm12;
         }
     }
     private void Update()
@@ -85,7 +92,7 @@ public class LoadManager : MonoBehaviour
         {
             data.bölüm3 = 1;
             Save();
-            Debug.Log("Bölüm3 Kaydedildi Bölüm2 Süre kaydedildi");
+            Debug.Log("Bölüm3 Kaydedildi");
         }
         if (Bucked3to4.x4 == 1)
         {
@@ -135,6 +142,18 @@ public class LoadManager : MonoBehaviour
             Save();
             Debug.Log("Bölüm11 Kaydedildi");
         }
+        if (Bucked11To12.x12 == 1)
+        {
+            data.bölüm12 = 1;
+            Save();
+            Debug.Log("Bölüm12 Kaydedildi");
+        }
+        if (Bucked12To13.x13 == 1)
+        {
+            data.bölüm13 = 1;
+            Save();
+            Debug.Log("Bölüm13 Kaydedildi");
+        }
     }
 
     public void Save()
@@ -163,7 +182,7 @@ public class LoadManager : MonoBehaviour
 [System.Serializable]
 public class Data
 {
-    public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11;
+    public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11, bölüm12, bölüm13;
    
     public Data()
     {
@@ -177,6 +196,8 @@ public class Data
         bölüm9 = 0; //time8= 
         bölüm10 = 0; //time9= 
         bölüm11 = 0; //time10= 
+        bölüm12 = 0;
+        bölüm13 = 0;
     }
 
 }

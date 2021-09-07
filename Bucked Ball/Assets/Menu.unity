@@ -3040,8 +3040,8 @@ GameObject:
   - component: {fileID: 1514646114}
   - component: {fileID: 1514646113}
   - component: {fileID: 1514646112}
-  - component: {fileID: 1514646111}
   - component: {fileID: 1514646110}
+  - component: {fileID: 1514646111}
   m_Layer: 5
   m_Name: Episode13
   m_TagString: Untagged
@@ -3081,6 +3081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b53a1119ad56f324b9970ec9917d73e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  openLevel: {fileID: 1514646111}
 --- !u!95 &1514646111
 Animator:
   serializedVersion: 3
@@ -3091,10 +3092,10 @@ Animator:
   m_GameObject: {fileID: 1514646108}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3bbad1cbdd6bd0944b62cdd3440e04bc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9fb84948cbd59f04dbad768cafe44390, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
@@ -3144,8 +3145,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Episode12Start, Assembly-CSharp
+      - m_Target: {fileID: 1514646110}
+        m_TargetAssemblyTypeName: Episode13Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -3379,6 +3380,8 @@ MonoBehaviour:
     "b\xF6l\xFCm9": 0
     "b\xF6l\xFCm10": 0
     "b\xF6l\xFCm11": 0
+    "b\xF6l\xFCm12": 0
+    "b\xF6l\xFCm13": 0
 --- !u!4 &1797352585
 Transform:
   m_ObjectHideFlags: 0

@@ -8667,13 +8667,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 845049237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bec16b621ad8aae4a94bd4b2f651475c, type: 3}
+  m_Script: {fileID: 11500000, guid: c7b6463c124182c4bb5c4ab83395b575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   LevelEnd1: {fileID: 1665733546}
   Gud: {fileID: 1614995755}
-  Medium: {fileID: 749866607}
-  Bad: {fileID: 1173901206}
+  Medium: {fileID: 1173901206}
+  Bad: {fileID: 749866607}
 --- !u!61 &845049239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9171,8 +9171,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 917926711}
-        m_TargetAssemblyTypeName: NextLvl11, Assembly-CSharp
-        m_MethodName: 
+        m_TargetAssemblyTypeName: NextLvl12, Assembly-CSharp
+        m_MethodName: Next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

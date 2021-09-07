@@ -8,7 +8,7 @@ public class levels12 : MonoBehaviour
     public void GetLevels1()
     {
         Time.timeScale = 1f;
-        Bucked11To12.x12 = 1;
+        Bucked12To13.x13 = 1;
         SceneManager.LoadScene(1);
     }
 }
