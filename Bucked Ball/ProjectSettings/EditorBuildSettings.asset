@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/episode13.unity
     guid: 4758a91f7d6d818439395c3ff45da0f2
+  - enabled: 1
+    path: Assets/episode14.unity
+    guid: f3f1a4c92e8daf144b5145fe5d38d8bc
   m_configObjects: {}

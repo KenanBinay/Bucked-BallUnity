@@ -6,22 +6,18 @@ public class FanMovement : MonoBehaviour
 {
     public GameObject fan;
     public Rigidbody2D top;
-    
+
     [Range(0.0f, 10.0f)]
     public float hýz;
-    void Start()
-    {
-        
-    }
-
+ 
+/*
     void Update()
     {
-        if (Bucked11To12.x12 != 1)
-        {
-            fan.transform.Rotate(0, 0, -2);
-        }
-        
+        if (Bucked11To12.x12 != 1) { }
+
+        fan.transform.Rotate(0, 0, -2);
     }
+ */
     /*
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -29,6 +25,16 @@ public class FanMovement : MonoBehaviour
         Debug.Log("EtkileþimFan");
     }
     */
+   /* private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (kova.gameObject.CompareTag("Player"))
+        {
+            fan.transform.Rotate(0, 0, 0);
+        }
+        else { Fan(); }
+      
+    }
+   */
     private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("EtkileþimFan");
