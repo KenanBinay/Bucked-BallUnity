@@ -7,7 +7,7 @@ public class FanMovement : MonoBehaviour
     public GameObject fan;
     public Rigidbody2D top;
 
-    [Range(0.0f, 10.0f)]
+    [Range(-10.0f, 10.0f)]
     public float hýz;
  
 /*
@@ -38,6 +38,7 @@ public class FanMovement : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
         Debug.Log("EtkileþimFan");
+      
         top.AddForce(Vector2.right*hýz);       
     }
    
