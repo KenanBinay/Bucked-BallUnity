@@ -1,7 +1,8 @@
-ï»¿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Bucked6To7 : MonoBehaviour
+
+public class Bucked15To16 : MonoBehaviour
 {
     public GameObject LevelEnd1;
 
@@ -12,7 +13,7 @@ public class Bucked6To7 : MonoBehaviour
         LevelEnd1.gameObject.SetActive(false);
     }
 
-    public static float x7 = 0;
+    public static float x16 = 0;
     public static float CloseOpen = 0;
 
     public GameObject Gud;
@@ -23,9 +24,9 @@ public class Bucked6To7 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-         //   SceneManager.LoadScene("Menu");
+            //   SceneManager.LoadScene("Menu");
             StartPointKey.say = 0;
-            x7 = 1;
+            x16 = 1;
             CloseOpen = 1;
             LevelEnd1.gameObject.SetActive(false);
             Gud.SetActive(false);
@@ -35,11 +36,11 @@ public class Bucked6To7 : MonoBehaviour
     }
     void Update()
     {
-        if (x7 == 1) { level6(); }
+        if (x16 == 1) { level15(); }
         else { return; }
     }
 
-    public void level6()
+    public void level15()
     {
         StartCoroutine(GetEndLevel());
     }
@@ -50,7 +51,7 @@ public class Bucked6To7 : MonoBehaviour
 
         if (CloseOpen == 1)
         {
-            Debug.Log("BÃ¶lÃ¼m bitti");
+            Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
             if (Sayac.deger >= 0 && Sayac.deger <= 17) { Gud.SetActive(true); }
             if (Sayac.deger >= 17 && Sayac.deger <= 25) { Medium.SetActive(true); }

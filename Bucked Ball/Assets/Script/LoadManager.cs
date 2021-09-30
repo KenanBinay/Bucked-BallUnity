@@ -85,6 +85,10 @@ public class LoadManager : MonoBehaviour
         {
             Bucked14To15.x15 = LoadManager.instance.data.bölüm15;
         }
+        if (data.bölüm16 == 1)
+        {
+            Bucked15To16.x16 = LoadManager.instance.data.bölüm16;
+        }
     }
     private void Update()
     {
@@ -172,6 +176,12 @@ public class LoadManager : MonoBehaviour
             Save();
             Debug.Log("Bölüm15 Kaydedildi");
         }
+        if (Bucked15To16.x16 == 1)
+        {
+            data.bölüm16 = 1;
+            Save();
+            Debug.Log("Bölüm16 Kaydedildi");
+        }
     }
 
     public void Save()
@@ -200,7 +210,7 @@ public class LoadManager : MonoBehaviour
 [System.Serializable]
 public class Data
 {
-    public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11, bölüm12, bölüm13, bölüm14, bölüm15;
+    public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11, bölüm12, bölüm13, bölüm14, bölüm15, bölüm16;
    
     public Data()
     {
@@ -218,6 +228,7 @@ public class Data
         bölüm13 = 0;
         bölüm14 = 0;
         bölüm15 = 0;
+        bölüm16 = 0;
     }
 
 }
