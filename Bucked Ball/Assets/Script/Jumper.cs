@@ -7,13 +7,12 @@ public class Jumper : MonoBehaviour
     public Rigidbody2D top;
 
     [Range(-10.0f, 10.0f)]
-    public float hýz;
+    public float hiz;
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Etkileþim Top");
-      
-        top.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")+hýz);
+
+        top.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * hiz, ForceMode2D.Impulse);
         
     }
 }
