@@ -101,6 +101,14 @@ public class LoadManager : MonoBehaviour
         {
             Bucked18To19.x19 = LoadManager.instance.data.bölüm19;
         }
+        if (data.bölüm20 == 1)
+        {
+            Bucked19To20.x20 = LoadManager.instance.data.bölüm20;
+        }
+        if (data.bölüm21 == 1)
+        {
+            Bucked20To21.x21 = LoadManager.instance.data.bölüm21;
+        }
     }
     private void Update()
     {
@@ -212,6 +220,18 @@ public class LoadManager : MonoBehaviour
             Save();
             Debug.Log("Bölüm19 Kaydedildi");
         }
+        if (Bucked19To20.x20 == 1)
+        {
+            data.bölüm20 = 1;
+            Save();
+            Debug.Log("Bölüm20 Kaydedildi");
+        }
+        if (Bucked20To21.x21 == 1)
+        {
+            data.bölüm21 = 1;
+            Save();
+            Debug.Log("Bölüm21 Kaydedildi");
+        }
     }
 
     public void Save()
@@ -240,7 +260,7 @@ public class LoadManager : MonoBehaviour
 [System.Serializable]
 public class Data
 {
-    public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11, bölüm12, bölüm13, bölüm14, bölüm15, bölüm16, bölüm17, bölüm18, bölüm19;
+    public float bölüm2, bölüm3, bölüm4, bölüm5, bölüm6, bölüm7, bölüm8, bölüm9, bölüm10, bölüm11, bölüm12, bölüm13, bölüm14, bölüm15, bölüm16, bölüm17, bölüm18, bölüm19, bölüm20, bölüm21;
    
     public Data()
     {
@@ -262,6 +282,8 @@ public class Data
         bölüm17 = 0;
         bölüm18 = 0;
         bölüm19 = 0;
+        bölüm20 = 0;
+        bölüm21 = 0;
     }
 
 }

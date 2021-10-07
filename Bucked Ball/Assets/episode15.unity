@@ -1980,8 +1980,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 276411038}
-        m_TargetAssemblyTypeName: NextLvl13, Assembly-CSharp
-        m_MethodName: 
+        m_TargetAssemblyTypeName: NextLevel15, Assembly-CSharp
+        m_MethodName: Next
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

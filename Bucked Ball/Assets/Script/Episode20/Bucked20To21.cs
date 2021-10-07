@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bucked19To20 : MonoBehaviour
+public class Bucked20To21 : MonoBehaviour
 {
     public GameObject LevelEnd1;
 
@@ -11,10 +11,9 @@ public class Bucked19To20 : MonoBehaviour
         Sayac.deger = 0;
         if (LevelEnd1.gameObject == true) { LevelEnd1.gameObject.SetActive(false); }
         LevelEnd1.gameObject.SetActive(false);
-       
     }
 
-    public static float x20 = 0;
+    public static float x21 = 0;
     public static float CloseOpen = 0;
 
     public GameObject Gud;
@@ -27,7 +26,7 @@ public class Bucked19To20 : MonoBehaviour
         {
             //   SceneManager.LoadScene("Menu");
             StartPointKey.say = 0;
-            x20 = 1;
+            x21 = 1;
             CloseOpen = 1;
             LevelEnd1.gameObject.SetActive(false);
             Gud.SetActive(false);
@@ -37,15 +36,15 @@ public class Bucked19To20 : MonoBehaviour
     }
     void Update()
     {
-        if (x20 == 1) { level6(); }
+        if (x21 == 1) { level20(); }
         else { return; }
     }
 
-    public void level6()
+    public void level20()
     {
         StartCoroutine(GetEndLevel());
     }
-
+    public GameObject levels;
     public IEnumerator GetEndLevel()
     {
         yield return new WaitForSeconds(0.50f);
@@ -54,6 +53,7 @@ public class Bucked19To20 : MonoBehaviour
         {
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
+            levels.gameObject.SetActive(true);
             if (Sayac.deger >= 0 && Sayac.deger <= 17) { Gud.SetActive(true); }
             if (Sayac.deger >= 17 && Sayac.deger <= 25) { Medium.SetActive(true); }
             if (Sayac.deger >= 25) { Bad.SetActive(true); }
