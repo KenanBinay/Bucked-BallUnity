@@ -18,9 +18,14 @@ public class Episode11Start : MonoBehaviour
             openLevel.enabled = true;
         }
     }
-    public void StartGame()
+    public void EpisodeStart()
     {
-        SceneManager.LoadScene("episode11");
+        StartCoroutine(StartMap());
+    }
+    public IEnumerator StartMap()
+    {
         StartPointKey.say = 0;
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode11");
     }
 }

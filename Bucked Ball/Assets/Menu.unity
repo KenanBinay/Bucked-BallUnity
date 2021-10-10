@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 65143010}
   - component: {fileID: 65143009}
   - component: {fileID: 65143008}
+  - component: {fileID: 65143013}
   m_Layer: 5
   m_Name: Episode6
   m_TagString: Untagged
@@ -240,8 +241,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 65143013}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 65143008}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode6Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -290,6 +303,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 65143006}
   m_CullTransparentMesh: 0
+--- !u!114 &65143013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65143006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &85630742
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +330,7 @@ GameObject:
   - component: {fileID: 85630744}
   - component: {fileID: 85630748}
   - component: {fileID: 85630747}
+  - component: {fileID: 85630749}
   m_Layer: 5
   m_Name: Episode9
   m_TagString: Untagged
@@ -375,8 +402,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 85630749}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 85630748}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode9Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -457,6 +496,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   openlevel: {fileID: 85630747}
+--- !u!114 &85630749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85630742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &93292581
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +681,7 @@ GameObject:
   - component: {fileID: 122916762}
   - component: {fileID: 122916761}
   - component: {fileID: 122916760}
+  - component: {fileID: 122916765}
   m_Layer: 5
   m_Name: Episode3
   m_TagString: Untagged
@@ -732,8 +785,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 122916765}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 122916760}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode3Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -782,6 +847,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122916758}
   m_CullTransparentMesh: 0
+--- !u!114 &122916765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122916758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &237105927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1277,7 @@ GameObject:
   - component: {fileID: 397287682}
   - component: {fileID: 397287681}
   - component: {fileID: 397287680}
+  - component: {fileID: 397287685}
   m_Layer: 5
   m_Name: Episode20
   m_TagString: Untagged
@@ -1302,6 +1381,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 397287685}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 397287680}
         m_TargetAssemblyTypeName: Episode20Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -1352,6 +1443,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397287678}
   m_CullTransparentMesh: 0
+--- !u!114 &397287685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397287678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &424058720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,6 +1469,7 @@ GameObject:
   - component: {fileID: 424058723}
   - component: {fileID: 424058722}
   - component: {fileID: 424058724}
+  - component: {fileID: 424058726}
   m_Layer: 0
   m_Name: Home
   m_TagString: Untagged
@@ -1447,6 +1552,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 424058726}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 424058722}
         m_TargetAssemblyTypeName: SeeLevels2, Assembly-CSharp
         m_MethodName: MainMenu
@@ -1497,6 +1614,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &424058726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424058720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &455901041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1511,6 +1641,7 @@ GameObject:
   - component: {fileID: 455901045}
   - component: {fileID: 455901044}
   - component: {fileID: 455901043}
+  - component: {fileID: 455901048}
   m_Layer: 5
   m_Name: Episode10
   m_TagString: Untagged
@@ -1614,8 +1745,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 455901048}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 455901044}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode10Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -1664,6 +1807,146 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 455901041}
   m_CullTransparentMesh: 0
+--- !u!114 &455901048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455901041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
+--- !u!1 &487400645
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487400647}
+  - component: {fileID: 487400646}
+  m_Layer: 0
+  m_Name: 'ButtonAudioSource '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &487400646
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487400645}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44b4c953cacd04d44bc05d614710a099, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &487400647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487400645}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.9, y: -9.7, z: 165.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &549991671
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,6 +2127,7 @@ GameObject:
   - component: {fileID: 612579007}
   - component: {fileID: 612579006}
   - component: {fileID: 612579005}
+  - component: {fileID: 612579010}
   m_Layer: 5
   m_Name: Episode4
   m_TagString: Untagged
@@ -1947,8 +2231,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 612579010}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 612579006}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode4Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -1997,6 +2293,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 612579003}
   m_CullTransparentMesh: 0
+--- !u!114 &612579010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612579003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &638503520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2493,6 +2802,7 @@ GameObject:
   - component: {fileID: 821583137}
   - component: {fileID: 821583136}
   - component: {fileID: 821583135}
+  - component: {fileID: 821583140}
   m_Layer: 5
   m_Name: Episode18
   m_TagString: Untagged
@@ -2596,6 +2906,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 821583140}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 821583136}
         m_TargetAssemblyTypeName: Episode18Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -2646,6 +2968,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821583133}
   m_CullTransparentMesh: 0
+--- !u!114 &821583140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821583133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &826594983
 GameObject:
   m_ObjectHideFlags: 0
@@ -2660,6 +2995,7 @@ GameObject:
   - component: {fileID: 826594987}
   - component: {fileID: 826594986}
   - component: {fileID: 826594985}
+  - component: {fileID: 826594990}
   m_Layer: 5
   m_Name: Episode8
   m_TagString: Untagged
@@ -2763,8 +3099,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 826594990}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 826594986}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Epsidode8Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -2813,6 +3161,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826594983}
   m_CullTransparentMesh: 0
+--- !u!114 &826594990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826594983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &852414843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2931,7 +3292,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 852414843}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!20 &852414848
 Camera:
   m_ObjectHideFlags: 0
@@ -4027,9 +4388,10 @@ GameObject:
   - component: {fileID: 1243664854}
   - component: {fileID: 1243664858}
   - component: {fileID: 1243664857}
+  - component: {fileID: 1243664859}
   - component: {fileID: 1243664856}
   - component: {fileID: 1243664855}
-  - component: {fileID: 1243664859}
+  - component: {fileID: 1243664860}
   m_Layer: 5
   m_Name: Episode1
   m_TagString: Untagged
@@ -4113,9 +4475,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1243664860}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1243664855}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Epsode1Start
+        m_TargetAssemblyTypeName: Episode1Start, Assembly-CSharp
+        m_MethodName: EpisodeStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4182,6 +4556,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1243664860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243664853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1253307405
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,6 +4583,7 @@ GameObject:
   - component: {fileID: 1253307409}
   - component: {fileID: 1253307408}
   - component: {fileID: 1253307407}
+  - component: {fileID: 1253307412}
   m_Layer: 5
   m_Name: Episode5
   m_TagString: Untagged
@@ -4299,8 +4687,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1253307412}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1253307408}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode5Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -4349,6 +4749,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253307405}
   m_CullTransparentMesh: 0
+--- !u!114 &1253307412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253307405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1272171489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4362,6 +4775,7 @@ GameObject:
   - component: {fileID: 1272171492}
   - component: {fileID: 1272171491}
   - component: {fileID: 1272171494}
+  - component: {fileID: 1272171496}
   - component: {fileID: 1272171495}
   m_Layer: 5
   m_Name: Episode2
@@ -4434,8 +4848,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1272171496}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1272171494}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: episode2Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -4516,6 +4942,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1272171496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272171489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1289017354
 GameObject:
   m_ObjectHideFlags: 0
@@ -4527,9 +4966,10 @@ GameObject:
   - component: {fileID: 1289017355}
   - component: {fileID: 1289017360}
   - component: {fileID: 1289017359}
+  - component: {fileID: 1289017356}
   - component: {fileID: 1289017358}
   - component: {fileID: 1289017357}
-  - component: {fileID: 1289017356}
+  - component: {fileID: 1289017361}
   m_Layer: 5
   m_Name: Episode11
   m_TagString: Untagged
@@ -4633,9 +5073,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1289017361}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1289017357}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: StartGame
+        m_TargetAssemblyTypeName: Episode11Start, Assembly-CSharp
+        m_MethodName: EpisodeStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4683,6 +5135,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289017354}
   m_CullTransparentMesh: 0
+--- !u!114 &1289017361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289017354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1314442802
 GameObject:
   m_ObjectHideFlags: 0
@@ -5253,6 +5718,7 @@ GameObject:
   - component: {fileID: 1514646112}
   - component: {fileID: 1514646110}
   - component: {fileID: 1514646111}
+  - component: {fileID: 1514646115}
   m_Layer: 5
   m_Name: Episode13
   m_TagString: Untagged
@@ -5356,6 +5822,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1514646115}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1514646110}
         m_TargetAssemblyTypeName: Episode13Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -5406,6 +5884,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514646108}
   m_CullTransparentMesh: 0
+--- !u!114 &1514646115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514646108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1586529273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5420,6 +5911,7 @@ GameObject:
   - component: {fileID: 1586529277}
   - component: {fileID: 1586529276}
   - component: {fileID: 1586529275}
+  - component: {fileID: 1586529280}
   m_Layer: 5
   m_Name: Episode19
   m_TagString: Untagged
@@ -5523,6 +6015,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1586529280}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1586529276}
         m_TargetAssemblyTypeName: Episode19Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -5573,6 +6077,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586529273}
   m_CullTransparentMesh: 0
+--- !u!114 &1586529280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586529273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1619675757
 GameObject:
   m_ObjectHideFlags: 0
@@ -5953,7 +6470,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1797352583
 GameObject:
@@ -6112,6 +6629,7 @@ GameObject:
   - component: {fileID: 1820661621}
   - component: {fileID: 1820661620}
   - component: {fileID: 1820661619}
+  - component: {fileID: 1820661624}
   m_Layer: 5
   m_Name: Episode14
   m_TagString: Untagged
@@ -6215,6 +6733,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1820661624}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1820661619}
         m_TargetAssemblyTypeName: Episode14Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -6265,6 +6795,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820661617}
   m_CullTransparentMesh: 0
+--- !u!114 &1820661624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820661617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1852932316
 GameObject:
   m_ObjectHideFlags: 0
@@ -6603,6 +7146,7 @@ GameObject:
   - component: {fileID: 1966882766}
   - component: {fileID: 1966882765}
   - component: {fileID: 1966882764}
+  - component: {fileID: 1966882769}
   m_Layer: 5
   m_Name: Episode12
   m_TagString: Untagged
@@ -6706,6 +7250,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1966882769}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1966882765}
         m_TargetAssemblyTypeName: Episode12Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -6756,6 +7312,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1966882762}
   m_CullTransparentMesh: 0
+--- !u!114 &1966882769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1966882762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1985392844
 GameObject:
   m_ObjectHideFlags: 0
@@ -6770,6 +7339,7 @@ GameObject:
   - component: {fileID: 1985392848}
   - component: {fileID: 1985392847}
   - component: {fileID: 1985392846}
+  - component: {fileID: 1985392851}
   m_Layer: 5
   m_Name: Episode16
   m_TagString: Untagged
@@ -6873,6 +7443,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1985392851}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1985392847}
         m_TargetAssemblyTypeName: Episode16Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -6923,6 +7505,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1985392844}
   m_CullTransparentMesh: 0
+--- !u!114 &1985392851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985392844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1988807546
 GameObject:
   m_ObjectHideFlags: 0
@@ -7016,6 +7611,7 @@ GameObject:
   - component: {fileID: 1989477572}
   - component: {fileID: 1989477571}
   - component: {fileID: 1989477570}
+  - component: {fileID: 1989477575}
   m_Layer: 5
   m_Name: Episode15
   m_TagString: Untagged
@@ -7119,6 +7715,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1989477575}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1989477570}
         m_TargetAssemblyTypeName: episode15Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -7169,6 +7777,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989477568}
   m_CullTransparentMesh: 0
+--- !u!114 &1989477575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989477568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &1994530096
 GameObject:
   m_ObjectHideFlags: 0
@@ -7262,6 +7883,7 @@ GameObject:
   - component: {fileID: 2005027796}
   - component: {fileID: 2005027795}
   - component: {fileID: 2005027799}
+  - component: {fileID: 2005027800}
   m_Layer: 5
   m_Name: Episode7
   m_TagString: Untagged
@@ -7346,8 +7968,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2005027800}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2005027795}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: Episode7Start, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -7415,6 +8049,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2005027800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2005027793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}
 --- !u!1 &2080074597
 GameObject:
   m_ObjectHideFlags: 0
@@ -7840,6 +8487,7 @@ GameObject:
   - component: {fileID: 2114035638}
   - component: {fileID: 2114035637}
   - component: {fileID: 2114035636}
+  - component: {fileID: 2114035641}
   m_Layer: 5
   m_Name: Episode17
   m_TagString: Untagged
@@ -7943,6 +8591,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 2114035641}
+        m_TargetAssemblyTypeName: ButtonClick, Assembly-CSharp
+        m_MethodName: ButtonSoundStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 2114035637}
         m_TargetAssemblyTypeName: Episode17Start, Assembly-CSharp
         m_MethodName: StartGame
@@ -7993,3 +8653,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2114035634}
   m_CullTransparentMesh: 0
+--- !u!114 &2114035641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2114035634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b351fb207498e46a6f3a746a544575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ButtonSound: {fileID: 487400646}

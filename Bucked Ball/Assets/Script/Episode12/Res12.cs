@@ -6,29 +6,15 @@ using UnityEngine.SceneManagement;
 //[RequireComponent(typeof(Animation))]
 public class Res12 : MonoBehaviour
 {
-    /*
-    Vector3 localPos;
-    bool wasPlaying;
-    private Animation animation;
-    void Awake()
+    public void Restart()
     {
-        localPos = transform.position;
-        wasPlaying = false;
-    }
-
-    void LateUpdate()
-    {
-       if (!animation.isPlaying & !wasPlaying)
-            return;
-
-        transform.localPosition += localPos;
-
-        wasPlaying = animation.isPlaying;
-    }
-    */
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(13);
+        Sayac.deger = 0;
         StartPointKey.say = 0;
+        StartCoroutine(RestartMap());
+    }
+    public IEnumerator RestartMap()
+    {
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode12");
     }
 }

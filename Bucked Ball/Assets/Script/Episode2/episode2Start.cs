@@ -31,7 +31,13 @@ public class episode2Start : MonoBehaviour
         Debug.Log("bölüm 2 başladı");
        // Bucked2and3.x1 = 0;
         StartPointKey.say = 0;
-        SceneManager.LoadScene("episode2");        
+
+        StartCoroutine(StartMap());
     }
-   
+    public IEnumerator StartMap()
+    {
+        StartPointKey.say = 0;
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode2");
+    }
 }

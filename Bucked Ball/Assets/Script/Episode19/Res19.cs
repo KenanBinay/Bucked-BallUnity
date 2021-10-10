@@ -5,9 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Res19 : MonoBehaviour
 {
-    public void RestartGame()
+    public void Restart()
     {
-        SceneManager.LoadScene(20);
+        Sayac.deger = 0;
         StartPointKey.say = 0;
+        StartCoroutine(RestartMap());
+    }
+    public IEnumerator RestartMap()
+    {
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode19");
     }
 }

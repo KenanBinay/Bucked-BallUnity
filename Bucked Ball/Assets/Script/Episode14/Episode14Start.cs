@@ -20,7 +20,12 @@ public class Episode14Start : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("episode14");
+        StartCoroutine(StartMap());
+    }
+    public IEnumerator StartMap()
+    {
         StartPointKey.say = 0;
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode14");
     }
 }

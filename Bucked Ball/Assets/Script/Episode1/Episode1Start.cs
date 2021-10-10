@@ -6,18 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class Episode1Start : MonoBehaviour
 {
- 
-
     void Start()
     {
         Sayac.deger = 0;
     }
 
-    // Update is called once per frame
-   public void Epsode1Start()
+   public void EpisodeStart()
     {
-       
+        StartCoroutine(StartMap());
+    }
+    public IEnumerator StartMap()
+    {
+        yield return new WaitForSeconds(0.30f);
         SceneManager.LoadScene("episode1");
-        
     }
 }

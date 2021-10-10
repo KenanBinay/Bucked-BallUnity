@@ -21,7 +21,12 @@ public class Episode17Start : MonoBehaviour
     }
     public void StartGame()
     {
-        SceneManager.LoadScene("episode17");
+        StartCoroutine(StartMap());
+    }
+    public IEnumerator StartMap()
+    {
         StartPointKey.say = 0;
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode17");
     }
 }

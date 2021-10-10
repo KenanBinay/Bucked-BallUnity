@@ -4,14 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class res2 : MonoBehaviour
 {
-    
-
-   
-    // Update is called once per frame
     public void Restart()
     {
-        Sayac.deger = 0;
-        SceneManager.LoadScene("episode2");
+        Sayac.deger = 0;    
         StartPointKey.say = 0;
+        StartCoroutine(RestartMap());
     }
+    public IEnumerator RestartMap()
+    {
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode2");
+    }
+
 }

@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 public class SeeLevels : MonoBehaviour
 {
-  
     public void Bolumler()
     {
+     
         StartCoroutine(GetLevels());
     }
     public IEnumerator GetLevels()

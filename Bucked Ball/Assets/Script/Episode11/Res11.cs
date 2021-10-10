@@ -4,16 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Res11 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void Restart()
     {
-        
-    }
-
-    // Update is called once per frame
-    public void Restartgame()
-    {
-        SceneManager.LoadScene("episode11");
+        Sayac.deger = 0;
         StartPointKey.say = 0;
+        StartCoroutine(RestartMap());
+    }
+    public IEnumerator RestartMap()
+    {
+        yield return new WaitForSeconds(0.30f);
+        SceneManager.LoadScene("episode11");
     }
 }
