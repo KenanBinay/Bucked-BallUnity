@@ -5,6 +5,7 @@ using UnityEngine;
 public class FanKova : MonoBehaviour
 {
     public GameObject Fan;
+    public AudioSource FanSource;
     private float hiz;
 
     private void Start()
@@ -21,6 +22,7 @@ public class FanKova : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             hiz = 0f;
+            FanSource.Stop();
         }
     }
 }

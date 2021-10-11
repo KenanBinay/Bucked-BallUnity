@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Bucked13To14 : MonoBehaviour
 {
     public GameObject LevelEnd1;
-
+    public AudioSource PuzzleDoneSource;
     void Start()
     {
         Sayac.deger = 0;
@@ -52,6 +52,7 @@ public class Bucked13To14 : MonoBehaviour
 
         if (CloseOpen == 1)
         {
+            PuzzleDoneSource.Play();
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
             if (Sayac.deger >= 0 && Sayac.deger <= 17) { Gud.SetActive(true); }

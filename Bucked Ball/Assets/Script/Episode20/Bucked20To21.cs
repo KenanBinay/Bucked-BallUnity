@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bucked20To21 : MonoBehaviour
 {
     public GameObject LevelEnd1;
-
+    public AudioSource PuzzleDoneSource;
     void Start()
     {
         Sayac.deger = 0;
@@ -51,6 +51,7 @@ public class Bucked20To21 : MonoBehaviour
 
         if (CloseOpen == 1)
         {
+            PuzzleDoneSource.Play();
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
             levels.gameObject.SetActive(true);

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Jumper : MonoBehaviour
 {
     public Rigidbody2D top;
+    public AudioSource JumpSource;
 
     [Range(-10.0f, 10.0f)]
     public float hiz;
@@ -13,6 +14,6 @@ public class Jumper : MonoBehaviour
     {
 
         top.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * hiz, ForceMode2D.Impulse);
-        
+        JumpSource.Play();
     }
 }

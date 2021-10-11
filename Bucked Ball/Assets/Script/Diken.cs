@@ -7,6 +7,7 @@ public class Diken : MonoBehaviour
     public GameObject Top;
     public GameObject PatlamaEfekt;
     public Animator KameraTitreme;
+    public AudioSource Blow;
     void Start()
     {
         KameraTitreme.enabled = false;
@@ -22,6 +23,7 @@ public class Diken : MonoBehaviour
     {
         if(collision.gameObject.tag=="Player")
         {
+            Blow.Play();
             PatlamaEfekt.transform.position = Top.transform.position;
             Instantiate(PatlamaEfekt);
             Destroy(Top);

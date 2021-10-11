@@ -7,6 +7,7 @@ public class Bucked14To15 : MonoBehaviour
 {
     public GameObject LevelEnd1;
     public Animator levelEndAnim;
+    public AudioSource PuzzleDoneSource;
     void Start()
     {
         Sayac.deger = 0;
@@ -55,6 +56,7 @@ public class Bucked14To15 : MonoBehaviour
 
         if (CloseOpen == 1)
         {
+            PuzzleDoneSource.Play();
             Debug.Log("Bölüm bitti");
             LevelEnd1.gameObject.SetActive(true);
            // levelEndAnim.enabled = true;
