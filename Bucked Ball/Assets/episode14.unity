@@ -6506,6 +6506,7 @@ GameObject:
   - component: {fileID: 787826526}
   - component: {fileID: 787826522}
   - component: {fileID: 787826527}
+  - component: {fileID: 787826528}
   m_Layer: 0
   m_Name: kova (5)
   m_TagString: Untagged
@@ -6657,6 +6658,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fan: {fileID: 344504357}
   FanSource: {fileID: 1654331096}
+--- !u!114 &787826528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787826521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b760f7e318dc241b9eaaef84dc3524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &790647052
 GameObject:
   m_ObjectHideFlags: 0

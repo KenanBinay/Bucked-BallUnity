@@ -679,6 +679,7 @@ GameObject:
   - component: {fileID: 63577426}
   - component: {fileID: 63577425}
   - component: {fileID: 63577424}
+  - component: {fileID: 63577428}
   m_Layer: 0
   m_Name: kova (3)
   m_TagString: Untagged
@@ -794,6 +795,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63577428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63577423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b760f7e318dc241b9eaaef84dc3524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &165037485
 GameObject:
   m_ObjectHideFlags: 0
@@ -14164,6 +14177,7 @@ MonoBehaviour:
   Diken1: {fileID: 990144096}
   Diken2: {fileID: 1435362642}
   Diken3: {fileID: 459205926}
+  Diken4: {fileID: 0}
   KeySource: {fileID: 736289452}
 --- !u!95 &2082922631
 Animator:

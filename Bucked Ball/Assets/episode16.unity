@@ -12327,6 +12327,7 @@ GameObject:
   - component: {fileID: 909774090}
   - component: {fileID: 909774089}
   - component: {fileID: 909774088}
+  - component: {fileID: 909774086}
   - component: {fileID: 909774087}
   - component: {fileID: 909774085}
   m_Layer: 0
@@ -12353,6 +12354,18 @@ MonoBehaviour:
   Gud: {fileID: 742023838}
   Medium: {fileID: 1567050942}
   Bad: {fileID: 134827787}
+--- !u!114 &909774086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909774084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b760f7e318dc241b9eaaef84dc3524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &909774087
 MonoBehaviour:
   m_ObjectHideFlags: 0

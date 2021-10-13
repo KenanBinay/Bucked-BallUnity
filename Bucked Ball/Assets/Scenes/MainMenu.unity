@@ -1229,6 +1229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 270555902}
   - component: {fileID: 270555903}
+  - component: {fileID: 270555904}
   m_Layer: 0
   m_Name: "AD\xC7er\xE7eve"
   m_TagString: Untagged
@@ -1302,6 +1303,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &270555904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270555901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa77a64a7714ec4e84c5d7cd40d1eca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &313820669
 GameObject:
   m_ObjectHideFlags: 0

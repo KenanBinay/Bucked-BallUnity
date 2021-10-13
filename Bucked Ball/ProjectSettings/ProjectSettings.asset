@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: BINAY
   productName: Bucked Ball
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -760,6 +760,7 @@ PlayerSettings:
     Build: 0
     Collab: 1
     UNet: 1
+    Unity Ads: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 

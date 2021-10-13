@@ -1249,6 +1249,7 @@ MonoBehaviour:
   Diken1: {fileID: 1998071290}
   Diken2: {fileID: 861237709}
   Diken3: {fileID: 1050416235}
+  Diken4: {fileID: 0}
   KeySource: {fileID: 754946580}
 --- !u!95 &362922325
 Animator:
@@ -2774,6 +2775,7 @@ GameObject:
   - component: {fileID: 730699853}
   - component: {fileID: 730699852}
   - component: {fileID: 730699856}
+  - component: {fileID: 730699857}
   m_Layer: 0
   m_Name: kova (4)
   m_TagString: Untagged
@@ -2903,6 +2905,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fan: {fileID: 1238302142}
   FanSource: {fileID: 879808383}
+--- !u!114 &730699857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730699851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b760f7e318dc241b9eaaef84dc3524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &754374156
 GameObject:
   m_ObjectHideFlags: 0
