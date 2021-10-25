@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40a705db13e070e41af4ca497e48a3b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Top: {fileID: 0}
+  Top: {fileID: 1765579862}
   PatlamaEfekt: {fileID: 0}
   KameraTitreme: {fileID: 0}
   Blow: {fileID: 691253958}
@@ -6546,6 +6546,7 @@ MonoBehaviour:
   Diken1: {fileID: 1157263486}
   Diken2: {fileID: 796489144}
   Diken3: {fileID: 1792840047}
+  Diken4: {fileID: 0}
   KeySource: {fileID: 680311850}
 --- !u!60 &1254426226
 PolygonCollider2D:
